@@ -1,0 +1,10 @@
+{
+  "agent": "Validador de Notas UCO - Java POO",
+  "description": "Agente autónomo especializado en la arquitectura de objetos, clases y validación de promedios académicos.",
+  "model": "big-pickle",
+  "skills": [
+    "calculo_promedios_ponderados",
+    "gestion_estudiantes_poo",
+    "buenas_practicas_git"
+  ]
+}
