@@ -12,7 +12,11 @@ Este proyecto es una aplicación desarrollada en **Java** aplicando los principi
 - `Profesor.java`: Maneja la información del docente.
 - `Estudiante.java`: Lógica del estudiante y procesamiento de notas.
 - `Main.java`: Punto de entrada del programa.
+<<<<<<< HEAD
 - `.opencode`: Configuración del agente e instrucciones para asistentes de IA.
 
 ## 🤖 Configuración Open Code
 El archivo `.opencode` define el agente autónomo encargado de verificar la consistencia de la lógica POO y el cálculo de notas.
+=======
+- `.opencode`: Configuración del agente e instrucciones para asistentes de IA.
+>>>>>>> development
