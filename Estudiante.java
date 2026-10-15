@@ -50,4 +50,10 @@ public class Estudiante extends Persona {
     public boolean estaAprobado() {
         return calcularPromedio() >= NOTA_MINIMA_APROBATORIA;
     }
+
+    // Implementación del método abstracto heredado de Persona
+    @Override
+    public String obtenerInformacion() {
+        return "Estudiante: " + getNombre() + " | C.C.: " + getCedula() + " | Carrera: " + carrera;
+    }
 }
