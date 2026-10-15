@@ -3,8 +3,8 @@ public abstract class Persona {
     private String cedula;
 
     public Persona(String nombre, String cedula) {
-        this.nombre = nombre;
-        this.cedula = cedula;
+        setNombre(nombre);
+        setCedula(cedula);
     }
 
     public String getNombre() {
@@ -12,7 +12,11 @@ public abstract class Persona {
     }
 
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        if (nombre != null && !nombre.trim().isEmpty()) {
+            this.nombre = nombre.trim();
+        } else {
+            this.nombre = "Sin Nombre";
+        }
     }
 
     public String getCedula() {
@@ -20,6 +24,13 @@ public abstract class Persona {
     }
 
     public void setCedula(String cedula) {
-        this.cedula = cedula;
+        if (cedula != null && !cedula.trim().isEmpty()) {
+            this.cedula = cedula.trim();
+        } else {
+            this.cedula = "Sin Cédula";
+        }
     }
+
+    // Método abstracto para reforzar la abstracción en POO
+    public abstract String obtenerInformacion();
 }
