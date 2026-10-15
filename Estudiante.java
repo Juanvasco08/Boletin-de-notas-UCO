@@ -1,8 +1,12 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Estudiante extends Persona {
+    public static final double NOTA_MINIMA_APROBATORIA = 3.0;
+    
     private String carrera;
-    private ArrayList<Double> notas;
+    private final ArrayList<Double> notas;
 
     public Estudiante(String nombre, String cedula, String carrera) {
         super(nombre, cedula);
@@ -14,12 +18,22 @@ public class Estudiante extends Persona {
         return carrera;
     }
 
-    public ArrayList<Double> getNotas() {
-        return notas;
+    public void setCarrera(String carrera) {
+        this.carrera = carrera;
     }
 
-    public void agregarNota(double nota) {
-        this.notas.add(nota);
+    // Retorna una lista no modificable para proteger la encapsulación
+    public List<Double> getNotas() {
+        return Collections.unmodifiableList(notas);
+    }
+
+    // Validación de rango académico (0.0 a 5.0)
+    public boolean agregarNota(double nota) {
+        if (nota >= 0.0 && nota <= 5.0) {
+            this.notas.add(nota);
+            return true;
+        }
+        return false;
     }
 
     public double calcularPromedio() {
@@ -34,6 +48,6 @@ public class Estudiante extends Persona {
     }
 
     public boolean estaAprobado() {
-        return calcularPromedio() >= 3.0;
+        return calcularPromedio() >= NOTA_MINIMA_APROBATORIA;
     }
 }
