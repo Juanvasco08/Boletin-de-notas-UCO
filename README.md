@@ -1,22 +1,7 @@
-# 📚 Sistema de Boletín de Notas UCO
+# QUIPUX -GIT,GITHUB,OPENCODE-
 
-Este proyecto es una aplicación desarrollada en **Java** aplicando los principios de **Programación Orientada a Objetos (POO)** para la gestión y cálculo de promedios académicos de estudiantes de la UCO.
+Este proyecto es un sistema de gestión académica que armamos en Java para la UCO. La idea principal es calcular la nota final y el promedio de los estudiantes aplicando los conceptos de Programación Orientada a Objetos usando clases como Persona, Estudiante, Profesor y el Main para conectar todo.
 
-## 🛠️ Tecnologías y Herramientas
-- **Lenguaje:** Java
-- **Control de Versiones:** Git & GitHub
-- **Integración de IA:** Open Code (.opencode)
+Para organizar y controlar el código nos apoyamos en herramientas clave. Con Git manejamos todo el control de versiones de forma local: usamos git switch para movernos entre las ramas, git add para preparar los archivos, git commit para guardar los cambios con su mensaje, git push para subirlo al servidor y git merge para unir el trabajo de desarrollo con la rama principal.
 
-## 📁 Estructura del Proyecto
-- `Persona.java`: Clase base con atributos generales.
-- `Profesor.java`: Maneja la información del docente.
-- `Estudiante.java`: Lógica del estudiante y procesamiento de notas.
-- `Main.java`: Punto de entrada del programa.
-<<<<<<< HEAD
-- `.opencode`: Configuración del agente e instrucciones para asistentes de IA.
-
-## 🤖 Configuración Open Code
-El archivo `.opencode` define el agente autónomo encargado de verificar la consistencia de la lógica POO y el cálculo de notas.
-=======
-- `.opencode`: Configuración del agente e instrucciones para asistentes de IA.
->>>>>>> development
+Por su parte, GitHub nos sirvió como el repositorio remoto para respaldar el proyecto de manera segura y, lo mejor, para ver, auditar y hacerle seguimiento visual a todo el historial de commits que fuimos haciendo. Además, la configuración de .opencode nos ayudó muchísimo a integrar la inteligencia artificial que nos guió paso a paso con la lógica, las clases y la refactorización del código.
